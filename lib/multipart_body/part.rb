@@ -23,7 +23,7 @@ class Part < Struct.new(:name, :body, :filename, :content_disposition, :content_
   end
   
   def header
-    header = ""
+    header = "".force_encoding("ASCII-8BIT")
     if content_disposition || name
       header << "Content-Disposition: #{content_disposition || 'form-data'}"
       header << "; name=\"#{name}\"" if name && !content_disposition
