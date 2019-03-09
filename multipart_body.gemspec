@@ -8,7 +8,6 @@ Gem::Specification.new do |s|
   s.summary     = "MultipartBody allows you to create consistant multipart bodies"
 
   s.platform = Gem::Platform::RUBY
-  s.has_rdoc = false
 
   s.require_path = 'lib'
   s.files = %w(readme.md) + Dir.glob("lib/**/*")
